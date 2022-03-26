@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)https://editor.mdnice.com/?outId=988ab8d2a46346e682b2025eb54e1941 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style rc-util-key="@ant-design-icons">
+.anticon {
+  display: inline-block;
+  color: inherit;
+  font-style: normal;
+  line-height: 0;
+  text-align: center;
+  text-transform: none;
+  vertical-align: -0.125em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.anticon > * {
+  line-height: 1;
+}
+
+.anticon svg {
+  display: inline-block;
+}
+
+.anticon::before {
+  display: none;
+}
+
+.anticon .anticon-icon {
+  display: block;
+}
+
+.anticon[tabindex] {
+  cursor: pointer;
+}
+
+.anticon-spin::before,
+.anticon-spin {
+  display: inline-block;
+  -webkit-animation: loadingCircle 1s infinite linear;
+  animation: loadingCircle 1s infinite linear;
+}
+
+@-webkit-keyframes loadingCircle {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loadingCircle {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+</style><link rel="icon" href="https://editor.mdnice.com/favicon.svg" type="image/svg+xml"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="https://editor.mdnice.com/manifest.json"><title>Markdown | 让排版变 Nice</title><meta name="keywords" content="markdown编辑器,online markdown editor,markdown微信排版,mdnice"><meta name="description" content="mdnice 是一款 Markdown 微信编辑器，拥有良好的兼容性、海量主题样式、免费的图床、强大的技术团队，提供文章一键排版，同时支持知乎、掘金、微信订阅号等多个平台。"><script src="./Markdown _ 让排版变 Nice_files/hm.js"></script><script>var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?f857e607ecc7cde02ed32a561f10efb2";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script><link href="./Markdown _ 让排版变 Nice_files/7.12bfc2ff.chunk.css" rel="stylesheet"><link href="./Markdown _ 让排版变 Nice_files/main.768b93f6.chunk.css" rel="stylesheet"><style id="basic-theme">/*默认样式，最佳实践*/
+
+/*全局属性*/
+#nice {
+  font-size: 16px;
+  color: black;
+  padding: 0 10px;
+  line-height: 1.6;
+  word-spacing: 0px;
+  letter-spacing: 0px;
+  word-break: break-word;
+  word-wrap: break-word;
+  text-align: left;
+  font-family: Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* margin-top: -10px; 解决开头空隙过大问题*/
+}
+
+/*段落*/
+#nice p {
+  font-size: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0;
+  line-height: 26px;
+  color: black;
+}
+
+/*标题*/
+#nice h1,
+#nice h2,
+#nice h3,
+#nice h4,
+#nice h5,
+#nice h6 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 0px;
+  font-weight: bold;
+  color: black;
+}
+#nice h1 {
+  font-size: 24px;
+}
+#nice h2 {
+  font-size: 22px;
+}
+#nice h3 {
+  font-size: 20px;
+}
+#nice h4 {
+  font-size: 18px;
+}
+#nice h5 {
+  font-size: 16px;
+}
+#nice h6 {
+  font-size: 16px;
+}
+
+#nice h1 .prefix,
+#nice h2 .prefix,
+#nice h3 .prefix,
+#nice h4 .prefix,
+#nice h5 .prefix,
+#nice h6 .prefix {
+  display: none;
+}
+
+#nice h1 .suffix
+#nice h2 .suffix,
+#nice h3 .suffix,
+#nice h4 .suffix,
+#nice h5 .suffix,
+#nice h6 .suffix {
+  display: none;
+}
+
+/*列表*/
+#nice ul,
+#nice ol {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 25px;
+  color: black;
+}
+#nice ul {
+  list-style-type: disc;
+}
+#nice ul ul {
+  list-style-type: square;
+}
+
+#nice ol {
+  list-style-type: decimal;
+}
+
+#nice li section {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 26px;
+  text-align: left;
+  color: rgb(1,1,1); /* 只要是纯黑色微信编辑器就会把color这个属性吞掉。。。*/
+  font-weight: 500;
+}
+
+/*引用*/
+#nice blockquote {
+  border: none;
+}
+
+#nice .multiquote-1 {
+  display: block;
+  font-size: 0.9em;
+  overflow: auto;
+  overflow-scrolling: touch;
+  border-left: 3px solid rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.05);
+  color: #6a737d;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#nice .multiquote-1 p {
+  margin: 0px;
+  color: black;
+  line-height: 26px;
+}
+
+#nice .multiquote-2 {
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#nice .multiquote-3 {
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#nice .multiquote-3 p {
+  text-align: center;
+}
+
+#nice .multiquote-3 h3 {
+  text-align: center;
+}
+
+#nice .table-of-contents a {
+  border: none;
+  color: black;
+  font-weight: normal;
+}
+
+/*链接*/
+#nice a {
+  text-decoration: none;
+  color: #1e6bb8;
+  word-wrap: break-word;
+  font-weight: bold;
+  border-bottom: 1px solid #1e6bb8;
+}
+
+/*加粗*/
+#nice strong {
+  font-weight: bold;
+  color: black;
+}
+
+/*斜体*/
+#nice em {
+  font-style: italic;
+  color: black;
+}
+
+/*加粗斜体*/
+#nice em strong {
+  font-weight: bold;
+  color: black;
+}
+
+/*删除线*/
+#nice del {
+  font-style: italic;
+  color: black;
+}
+
+/*分隔线*/
+#nice hr {
+  height: 1px;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-top: 1px solid black;
+}
+
+/*代码块*/
+#nice pre {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#nice pre code {
+  display: -webkit-box;
+  font-family: Operator Mono, Consolas, Monaco, Menlo, monospace;
+  border-radius: 0px;
+  font-size: 12px;
+  -webkit-overflow-scrolling: touch;
+}
+#nice pre code span {
+  line-height: 26px;
+}
+
+/*行内代码*/
+#nice p code,
+#nice li code {
+  font-size: 14px;
+  word-wrap: break-word;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin: 0 2px;
+  color: #1e6bb8;
+  background-color: rgba(27,31,35,.05);
+  font-family: Operator Mono, Consolas, Monaco, Menlo, monospace;
+  word-break: break-all;
+}
+
+/*图片*/
+#nice img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/*图片*/
+#nice figure {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*图片描述文字*/
+#nice figcaption {
+  margin-top: 5px;
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}
+
+
+/*表格容器 */
+#nice .table-container{
+  overflow-x: auto;
+}
+
+/*表格*/
+#nice table {
+  display: table;
+  text-align: left;
+}
+#nice tbody {
+  border: 0;
+}
+
+#nice table tr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  background-color: white;
+}
+
+#nice table tr:nth-child(2n) {
+  background-color: #F8F8F8;
+}
+
+#nice table tr th,
+#nice table tr td {
+  font-size: 16px;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  text-align: left;
+}
+
+#nice table tr th {
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+/* 表格最小列宽4个汉字 */
+#nice table tr th:nth-of-type(n),
+#nice table tr td:nth-of-type(n){
+  min-width:85px;
+}
+
+#nice .footnote-word {
+  color: #1e6bb8;
+  font-weight: bold;
+}
+
+#nice .footnote-ref {
+  color: #1e6bb8;
+  font-weight: bold;
+}
+
+#nice .footnote-item {
+  display: flex;
+}
+
+#nice .footnote-num {
+  display: inline;
+  width: 10%; /*神奇，50px就不可以*/
+  background: none;
+  font-size: 80%;
+  opacity: 0.6;
+  line-height: 26px;
+  font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#nice .footnote-item p {
+  display: inline;
+  font-size: 14px;
+  width: 90%;
+  padding: 0px;
+  margin: 0;
+  line-height: 26px;
+  color: black;
+  word-break:break-all;
+  width: calc(100%-50)
+}
+
+#nice sub, sup {
+  line-height: 0;
+}
+
+#nice .footnotes-sep:before {
+  content: "参考资料";
+  display: block;
+}
+
+/* 解决公式问题 */
+#nice .block-equation {
+  display:block;
+  text-align: center;
+  overflow: auto;
+  display: block;
+  -webkit-overflow-scrolling: touch;
+}
+
+#nice .block-equation svg {
+  max-width: 300% !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+#nice .inline-equation {
+}
+
+#nice .inline-equation svg {
+}
+
+#nice .imageflow-layer1 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  white-space: normal;
+  border: 0px none;
+  padding: 0px;
+  overflow: hidden;
+}
+
+#nice .imageflow-layer2 {
+  white-space: nowrap;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+#nice .imageflow-layer3 {
+  display: inline-block;
+  word-wrap: break-word;
+  white-space: normal;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#nice .imageflow-img {
+  display: inline-block;
+}
+
+#nice .imageflow-caption {
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 0px;
+  color: #888;
+}
+
+#nice .nice-suffix-juejin-container {
+  margin-top: 20px !important;
+}
+
+#nice figure a {
+  border: none;
+}
+
+#nice figure a img {
+  margin: 0px;
+}
+
+#nice figure {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 图片链接嵌套 */
+#nice figure a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 图片链接嵌套，图片解释 */
+#nice figure a + figcaption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: -35px;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  line-height: 35px;
+  z-index: 20;
+}
+
+/* 容器块1 */
+#nice .block-1 {
+  display: block;
+  background: rgb(250,250,250);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#nice .block-1 .multiquote-1 {
+  border: none;
+  background: white;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+}
+
+/* 容器块2 */
+#nice .block-2 {
+  display: block;
+  background: rgb(250,250,250);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#nice .block-2 h3 {
+  text-align: center;
+}
+
+#nice .block-2 .multiquote-1 {
+  border: none;
+  background: white;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* 容器块3 */
+#nice .block-3 {
+  display: block;
+  background: rgb(250,250,250);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#nice .block-3 h3 {
+  text-align: right;
+}
+
+#nice .block-3 .multiquote-1 {
+  border: none;
+  background: white;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+  text-align: right;
+}
+
+/* 分列 */
+#nice .column {
+  display: flex
+}
+
+#nice .column .column-left {
+  text-align: center;
+  padding-right: 5px;
+  width: 50%;
+}
+
+#nice .column .column-right {
+  text-align: center;
+  padding-left: 5px;
+  width: 50%;
+}
+</style><script charset="utf-8" src="./Markdown _ 让排版变 Nice_files/3.28bc0851.chunk.js"></script><style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
+.CtxtMenu_InfoContent {  overflow:auto; text-align:left; font-size:80%;  padding:.4em .6em; border:1px inset; margin:1em 0px;  max-height:20em; max-width:30em; background-color:#EEEEEE;  white-space:normal;}
+.CtxtMenu_Info.CtxtMenu_MousePost {outline:none;}
+.CtxtMenu_Info {  position:fixed; left:50%; width:auto; text-align:center;  border:3px outset; padding:1em 2em; background-color:#DDDDDD;  color:black;  cursor:default; font-family:message-box; font-size:120%;  font-style:normal; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 15px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius:15px;               /* Safari and Chrome */  -moz-border-radius:15px;                  /* Firefox */  -khtml-border-radius:15px;                /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */  filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color="gray", Positive="true"); /* IE */}
+</style><style type="text/css">.CtxtMenu_MenuClose {  position:absolute;  cursor:pointer;  display:inline-block;  border:2px solid #AAA;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  font-family: "Courier New", Courier;  font-size:24px;  color:#F0F0F0}
+.CtxtMenu_MenuClose span {  display:block; background-color:#AAA; border:1.5px solid;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  line-height:0;  padding:8px 0 6px     /* may need to be browser-specific */}
+.CtxtMenu_MenuClose:hover {  color:white!important;  border:2px solid #CCC!important}
+.CtxtMenu_MenuClose:hover span {  background-color:#CCC!important}
+.CtxtMenu_MenuClose:hover:focus {  outline:none}
+</style><style type="text/css">.CtxtMenu_Menu {  position:absolute;  background-color:white;  color:black;  width:auto; padding:5px 0px;  border:1px solid #CCCCCC; margin:0; cursor:default;  font: menu; text-align:left; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 5px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius: 5px;             /* Safari and Chrome */  -moz-border-radius: 5px;                /* Firefox */  -khtml-border-radius: 5px;              /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */}
+.CtxtMenu_MenuItem {  padding: 1px 2em;  background:transparent;}
+.CtxtMenu_MenuArrow {  position:absolute; right:.5em; padding-top:.25em; color:#666666;  font-family: null; font-size: .75em}
+.CtxtMenu_MenuActive .CtxtMenu_MenuArrow {color:white}
+.CtxtMenu_MenuArrow.CtxtMenu_RTL {left:.5em; right:auto}
+.CtxtMenu_MenuCheck {  position:absolute; left:.7em;  font-family: null}
+.CtxtMenu_MenuCheck.CtxtMenu_RTL { right:.7em; left:auto }
+.CtxtMenu_MenuRadioCheck {  position:absolute; left: .7em;}
+.CtxtMenu_MenuRadioCheck.CtxtMenu_RTL {  right: .7em; left:auto}
+.CtxtMenu_MenuInputBox {  padding-left: 1em; right:.5em; color:#666666;  font-family: null;}
+.CtxtMenu_MenuInputBox.CtxtMenu_RTL {  left: .1em;}
+.CtxtMenu_MenuComboBox {  left:.1em; padding-bottom:.5em;}
+.CtxtMenu_MenuSlider {  left: .1em;}
+.CtxtMenu_SliderValue {  position:absolute; right:.1em; padding-top:.25em; color:#333333;  font-size: .75em}
+.CtxtMenu_SliderBar {  outline: none; background: #d3d3d3}
+.CtxtMenu_MenuLabel {  padding: 1px 2em 3px 1.33em;  font-style:italic}
+.CtxtMenu_MenuRule {  border-top: 1px solid #DDDDDD;  margin: 4px 3px;}
+.CtxtMenu_MenuDisabled {  color:GrayText}
+.CtxtMenu_MenuActive {  background-color: #606872;  color: white;}
+.CtxtMenu_MenuDisabled:focus {  background-color: #E8E8E8}
+.CtxtMenu_MenuLabel:focus {  background-color: #E8E8E8}
+.CtxtMenu_ContextMenu:focus {  outline:none}
+.CtxtMenu_ContextMenu .CtxtMenu_MenuItem:focus {  outline:none}
+.CtxtMenu_SelectionMenu {  position:relative; float:left;  border-bottom: none; -webkit-box-shadow:none; -webkit-border-radius:0px; }
+.CtxtMenu_SelectionItem {  padding-right: 1em;}
+.CtxtMenu_Selection {  right: 40%; width:50%; }
+.CtxtMenu_SelectionBox {  padding: 0em; max-height:20em; max-width: none;  background-color:#FFFFFF;}
+.CtxtMenu_SelectionDivider {  clear: both; border-top: 2px solid #000000;}
+.CtxtMenu_Menu .CtxtMenu_MenuClose {  top:-10px; left:-10px}
+</style><style id="MJX-SVG-styles">
+mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax="SVG"] > svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][display="true"][width="full"] {
+  display: flex;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line], svg[data-table] > g > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame], svg[data-table] > g > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed, svg[data-table] > g > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted, svg[data-table] > g > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > g > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
+  stroke-width: 3;
+}
+</style><style id="markdown-theme">/* 全局属性
+ * 页边距 padding: 30px;
+ * 英文换行 word-break: break-all;
+ */
+#nice {
+}
+
+/* 段落，下方未标注标签参数均同此处
+ * 上边距 margin-top: 5px;
+ * 下边距 margin-bottom: 5px;
+ * 行高 line-height: 26px;
+ * 词间距 word-spacing: 3px;
+ * 字间距 letter-spacing: 3px;
+ * 对齐 text-align: left;
+ * 颜色 color: #3e3e3e;
+ * 字体大小 font-size: 16px;
+ * 首行缩进 text-indent: 2em;
+ */
+#nice p {
+}
+
+/* 一级标题 */
+#nice h1 {
+}
+
+/* 一级标题内容 */
+#nice h1 .content {
+}
+
+/* 一级标题前缀 */
+#nice h1 .prefix {
+}
+
+/* 一级标题后缀 */
+#nice h1 .suffix {
+}
+
+/* 二级标题 */
+#nice h2 {
+}
+
+/* 二级标题内容 */
+#nice h2 .content {
+}
+
+/* 二级标题前缀 */
+#nice h2 .prefix {
+}
+
+/* 二级标题后缀 */
+#nice h2 .suffix {
+}
+
+/* 三级标题 */
+#nice h3 {
+}
+
+/* 三级标题内容 */
+#nice h3 .content {
+}
+
+/* 三级标题前缀 */
+#nice h3 .prefix {
+}
+
+/* 三级标题后缀 */
+#nice h3 .suffix {
+}
+
+/* 无序列表整体样式
+ * list-style-type: square|circle|disc;
+ */
+#nice ul {
+}
+
+/* 有序列表整体样式
+ * list-style-type: upper-roman|lower-greek|lower-alpha;
+ */
+#nice ol {
+}
+
+/* 列表内容，不要设置li
+ */
+#nice li section {
+}
+
+/* 一级引用
+ * 左边缘颜色 border-left-color: black;
+ * 背景色 background: gray;
+ */
+#nice .multiquote-1 {
+}
+
+/* 一级引用文字 */
+#nice .multiquote-1 p {
+}
+
+/* 二级引用
+ */
+#nice .multiquote-2 {
+}
+
+/* 二级引用文字 */
+#nice .multiquote-2 p {
+}
+
+/* 三级引用
+ */
+#nice .multiquote-3 {
+}
+
+/* 三级引用文字 */
+#nice .multiquote-3 p {
+}
+
+/* 链接 
+ * border-bottom: 1px solid #009688;
+ */
+#nice a {
+}
+
+/* 加粗 */
+#nice strong {
+}
+
+/* 斜体 */
+#nice em {
+}
+
+/* 加粗斜体 */
+#nice em strong {
+}
+
+/* 删除线 */
+#nice del {
+}
+
+/* 分隔线
+* 粗细、样式和颜色
+* border-top: 1px solid #3e3e3e;
+*/
+#nice hr {
+}
+
+/* 图片
+* 宽度 width: 80%;
+* 居中 margin: 0 auto;
+* 居左 margin: 0 0;
+*/
+#nice img {
+}
+
+/* 图片描述文字 */
+#nice figcaption {
+}
+
+/* 行内代码 */
+#nice p code, #nice li code {
+}
+
+/* 
+ * 代码块不换行 display: -webkit-box !important;
+ * 代码块换行 display: block;
+ */
+#nice pre code {
+}
+
+/*
+ * 表格内的单元格
+ * 字体大小 font-size: 16px;
+ * 边框 border: 1px solid #ccc;
+ * 内边距 padding: 5px 10px;
+ */
+#nice table tr th,
+#nice table tr td {
+}
+
+/* 
+ * 某一列表格列宽控制
+ * n 可以修改为具体数字，不修改时表示所有列
+ * 最小列宽 min-width: 85px;
+ */
+#nice table tr th:nth-of-type(n),
+#nice table tr td:nth-of-type(n){
+}
+
+/* 脚注文字 */
+#nice .footnote-word {
+}
+
+/* 脚注上标 */
+#nice .footnote-ref {
+}
+
+/* "参考资料"四个字 
+ * 内容 content: "参考资料";
+ */
+#nice .footnotes-sep:before {
+}
+
+/* 参考资料编号 */
+#nice .footnote-num {
+}
+
+/* 参考资料文字 */
+#nice .footnote-item p { 
+}
+
+/* 参考资料解释 */
+#nice .footnote-item p em {
+}
+
+/* 行间公式
+ * 最大宽度 max-width: 300% !important;
+ */
+#nice .block-equation svg {
+}
+
+/* 行内公式
+ */
+#nice .inline-equation svg { 
+}
+
+/* 容器块1 */
+#nice .block-1 {
+}
+
+/* 容器块2 */
+#nice .block-2 {
+}
+
+/* 容器块3 */
+#nice .block-3 {
+}
+
+/* 分列总体布局 */
+#nice .column {
+}
+
+/* 分列左边布局 */
+#nice .column .column-left {
+}
+
+/* 分列右边布局 */
+#nice .column .column-right {
+}</style><style id="font-theme">#nice { 
+  font-family: Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}</style><style id="code-theme">/*
+
+Atom One Dark by Daniel Gamage
+Original One Dark Syntax theme from https://github.com/atom/one-dark-syntax
+
+base:    #282c34
+mono-1:  #abb2bf
+mono-2:  #818896
+mono-3:  #5c6370
+hue-1:   #56b6c2
+hue-2:   #61aeee
+hue-3:   #c678dd
+hue-4:   #98c379
+hue-5:   #e06c75
+hue-5-2: #be5046
+hue-6:   #d19a66
+hue-6-2: #e6c07b
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 16px;
+  color: #abb2bf;
+  background: #282c34;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #5c6370;
+  font-style: italic;
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-formula {
+  color: #c678dd;
+}
+
+.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst {
+  color: #e06c75;
+}
+
+.hljs-literal {
+  color: #56b6c2;
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta-string {
+  color: #98c379;
+}
+
+.hljs-built_in,
+.hljs-class .hljs-title {
+  color: #e6c07b;
+}
+
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number {
+  color: #d19a66;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title {
+  color: #61aeee;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}</style></head><body class="" style=""><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="nice-app"><div id="nice-article-sidebar-out-container" class="nice-article-sidebar-out-container" style="width: 250px;"><div class="nice-article-sidebar-container"><div class="nice-article-sidebar-footer"><button type="button" class="ant-btn ant-btn-text nice-article-sidebar-footer-btn"><span role="img" aria-label="plus" class="anticon anticon-plus"><svg viewBox="64 64 896 896" focusable="false" data-icon="plus" width="1em" height="1em" fill="currentColor" aria-hidden="true"><defs><style></style></defs><path d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"></path><path d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8z"></path></svg></span><span>新增文章</span></button></div><div><div class="ant-list ant-list-sm ant-list-split"><div class="ant-spin-nested-loading"><div class="ant-spin-container"><ul class="ant-list-items"><li class="ant-list-item"><div class="nice-article-sidebar-list-item-container" style="background: rgb(24, 144, 255); color: white;"><div class="nice-article-sidebar-list-item-top-container"><span role="img" aria-label="lock" class="anticon anticon-lock nice-article-sidebar-list-item-private"><svg viewBox="64 64 896 896" focusable="false" data-icon="lock" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M832 464h-68V240c0-70.7-57.3-128-128-128H388c-70.7 0-128 57.3-128 128v224h-68c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V496c0-17.7-14.3-32-32-32zM332 240c0-30.9 25.1-56 56-56h248c30.9 0 56 25.1 56 56v224H332V240zm460 600H232V536h560v304zM484 701v53c0 4.4 3.6 8 8 8h40c4.4 0 8-3.6 8-8v-53a48.01 48.01 0 10-56 0z"></path></svg></span><p>Apache SeaTunnel 分布式数据集成平台</p><span role="img" aria-label="setting" tabindex="-1" class="anticon anticon-setting ant-dropdown-trigger nice-article-sidebar-list-item-setting"><svg viewBox="64 64 896 896" focusable="false" data-icon="setting" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M924.8 625.7l-65.5-56c3.1-19 4.7-38.4 4.7-57.8s-1.6-38.8-4.7-57.8l65.5-56a32.03 32.03 0 009.3-35.2l-.9-2.6a443.74 443.74 0 00-79.7-137.9l-1.8-2.1a32.12 32.12 0 00-35.1-9.5l-81.3 28.9c-30-24.6-63.5-44-99.7-57.6l-15.7-85a32.05 32.05 0 00-25.8-25.7l-2.7-.5c-52.1-9.4-106.9-9.4-159 0l-2.7.5a32.05 32.05 0 00-25.8 25.7l-15.8 85.4a351.86 351.86 0 00-99 57.4l-81.9-29.1a32 32 0 00-35.1 9.5l-1.8 2.1a446.02 446.02 0 00-79.7 137.9l-.9 2.6c-4.5 12.5-.8 26.5 9.3 35.2l66.3 56.6c-3.1 18.8-4.6 38-4.6 57.1 0 19.2 1.5 38.4 4.6 57.1L99 625.5a32.03 32.03 0 00-9.3 35.2l.9 2.6c18.1 50.4 44.9 96.9 79.7 137.9l1.8 2.1a32.12 32.12 0 0035.1 9.5l81.9-29.1c29.8 24.5 63.1 43.9 99 57.4l15.8 85.4a32.05 32.05 0 0025.8 25.7l2.7.5a449.4 449.4 0 00159 0l2.7-.5a32.05 32.05 0 0025.8-25.7l15.7-85a350 350 0 0099.7-57.6l81.3 28.9a32 32 0 0035.1-9.5l1.8-2.1c34.8-41.1 61.6-87.5 79.7-137.9l.9-2.6c4.5-12.3.8-26.3-9.3-35zM788.3 465.9c2.5 15.1 3.8 30.6 3.8 46.1s-1.3 31-3.8 46.1l-6.6 40.1 74.7 63.9a370.03 370.03 0 01-42.6 73.6L721 702.8l-31.4 25.8c-23.9 19.6-50.5 35-79.3 45.8l-38.1 14.3-17.9 97a377.5 377.5 0 01-85 0l-17.9-97.2-37.8-14.5c-28.5-10.8-55-26.2-78.7-45.7l-31.4-25.9-93.4 33.2c-17-22.9-31.2-47.6-42.6-73.6l75.5-64.5-6.5-40c-2.4-14.9-3.7-30.3-3.7-45.5 0-15.3 1.2-30.6 3.7-45.5l6.5-40-75.5-64.5c11.3-26.1 25.6-50.7 42.6-73.6l93.4 33.2 31.4-25.9c23.7-19.5 50.2-34.9 78.7-45.7l37.9-14.3 17.9-97.2c28.1-3.2 56.8-3.2 85 0l17.9 97 38.1 14.3c28.7 10.8 55.4 26.2 79.3 45.8l31.4 25.8 92.8-32.9c17 22.9 31.2 47.6 42.6 73.6L781.8 426l6.5 39.9zM512 326c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm79.2 255.2A111.6 111.6 0 01512 614c-29.9 0-58-11.7-79.2-32.8A111.6 111.6 0 01400 502c0-29.9 11.7-58 32.8-79.2C454 401.6 482.1 390 512 390c29.9 0 58 11.6 79.2 32.8A111.6 111.6 0 01624 502c0 29.9-11.7 58-32.8 79.2z"></path></svg></span></div><div class="nice-article-sidebar-list-item-bottom-container" style="color: white;"><p>2022-03-25 23:49:51</p></div></div></li><li class="ant-list-item"><div class="nice-article-sidebar-list-item-container"><div class="nice-article-sidebar-list-item-top-container"><span role="img" aria-label="lock" class="anticon anticon-lock nice-article-sidebar-list-item-private"><svg viewBox="64 64 896 896" focusable="false" data-icon="lock" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M832 464h-68V240c0-70.7-57.3-128-128-128H388c-70.7 0-128 57.3-128 128v224h-68c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V496c0-17.7-14.3-32-32-32zM332 240c0-30.9 25.1-56 56-56h248c30.9 0 56 25.1 56 56v224H332V240zm460 600H232V536h560v304zM484 701v53c0 4.4 3.6 8 8 8h40c4.4 0 8-3.6 8-8v-53a48.01 48.01 0 10-56 0z"></path></svg></span><p>Flink SourceFunction 初了解</p><span role="img" aria-label="setting" tabindex="-1" class="anticon anticon-setting ant-dropdown-trigger nice-article-sidebar-list-item-setting"><svg viewBox="64 64 896 896" focusable="false" data-icon="setting" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M924.8 625.7l-65.5-56c3.1-19 4.7-38.4 4.7-57.8s-1.6-38.8-4.7-57.8l65.5-56a32.03 32.03 0 009.3-35.2l-.9-2.6a443.74 443.74 0 00-79.7-137.9l-1.8-2.1a32.12 32.12 0 00-35.1-9.5l-81.3 28.9c-30-24.6-63.5-44-99.7-57.6l-15.7-85a32.05 32.05 0 00-25.8-25.7l-2.7-.5c-52.1-9.4-106.9-9.4-159 0l-2.7.5a32.05 32.05 0 00-25.8 25.7l-15.8 85.4a351.86 351.86 0 00-99 57.4l-81.9-29.1a32 32 0 00-35.1 9.5l-1.8 2.1a446.02 446.02 0 00-79.7 137.9l-.9 2.6c-4.5 12.5-.8 26.5 9.3 35.2l66.3 56.6c-3.1 18.8-4.6 38-4.6 57.1 0 19.2 1.5 38.4 4.6 57.1L99 625.5a32.03 32.03 0 00-9.3 35.2l.9 2.6c18.1 50.4 44.9 96.9 79.7 137.9l1.8 2.1a32.12 32.12 0 0035.1 9.5l81.9-29.1c29.8 24.5 63.1 43.9 99 57.4l15.8 85.4a32.05 32.05 0 0025.8 25.7l2.7.5a449.4 449.4 0 00159 0l2.7-.5a32.05 32.05 0 0025.8-25.7l15.7-85a350 350 0 0099.7-57.6l81.3 28.9a32 32 0 0035.1-9.5l1.8-2.1c34.8-41.1 61.6-87.5 79.7-137.9l.9-2.6c4.5-12.3.8-26.3-9.3-35zM788.3 465.9c2.5 15.1 3.8 30.6 3.8 46.1s-1.3 31-3.8 46.1l-6.6 40.1 74.7 63.9a370.03 370.03 0 01-42.6 73.6L721 702.8l-31.4 25.8c-23.9 19.6-50.5 35-79.3 45.8l-38.1 14.3-17.9 97a377.5 377.5 0 01-85 0l-17.9-97.2-37.8-14.5c-28.5-10.8-55-26.2-78.7-45.7l-31.4-25.9-93.4 33.2c-17-22.9-31.2-47.6-42.6-73.6l75.5-64.5-6.5-40c-2.4-14.9-3.7-30.3-3.7-45.5 0-15.3 1.2-30.6 3.7-45.5l6.5-40-75.5-64.5c11.3-26.1 25.6-50.7 42.6-73.6l93.4 33.2 31.4-25.9c23.7-19.5 50.2-34.9 78.7-45.7l37.9-14.3 17.9-97.2c28.1-3.2 56.8-3.2 85 0l17.9 97 38.1 14.3c28.7 10.8 55.4 26.2 79.3 45.8l31.4 25.8 92.8-32.9c17 22.9 31.2 47.6 42.6 73.6L781.8 426l6.5 39.9zM512 326c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm79.2 255.2A111.6 111.6 0 01512 614c-29.9 0-58-11.7-79.2-32.8A111.6 111.6 0 01400 502c0-29.9 11.7-58 32.8-79.2C454 401.6 482.1 390 512 390c29.9 0 58 11.6 79.2 32.8A111.6 111.6 0 01624 502c0 29.9-11.7 58-32.8 79.2z"></path></svg></span></div><div class="nice-article-sidebar-list-item-bottom-container"><p>2022-03-07 21:21:33</p></div></div></li></ul></div></div></div></div></div></div><div class="nice-app-main"><div class="nice-navbar"><div class="nice-left-nav"><section id="nice-title" class="nice-article-title">Apache SeaTunnel 分布式数据集成平台</section><a id="nice-menu-file" class="ant-dropdown-trigger nice-menu-link" href="https://editor.mdnice.com/?outId=988ab8d2a46346e682b2025eb54e1941#">文件</a><a id="nice-menu-pattern" class="ant-dropdown-trigger nice-menu-link" href="https://editor.mdnice.com/?outId=988ab8d2a46346e682b2025eb54e1941#">格式</a><a id="nice-menu-function" class="ant-dropdown-trigger nice-menu-link" href="https://editor.mdnice.com/?outId=988ab8d2a46346e682b2025eb54e1941#">功能</a><a id="nice-menu-view" class="ant-dropdown-trigger nice-menu-link" href="https://editor.mdnice.com/?outId=988ab8d2a46346e682b2025eb54e1941#">查看</a><a id="nice-menu-theme" class="ant-dropdown-trigger nice-menu-link" href="https://editor.mdnice.com/?outId=988ab8d2a46346e682b2025eb54e1941#">主题</a><a id="nice-menu-codetheme" class="ant-dropdown-trigger nice-menu-link" href="https://editor.mdnice.com/?outId=988ab8d2a46346e682b2025eb54e1941#">代码主题</a><a id="nice-menu-setting" class="ant-dropdown-trigger nice-menu-link" href="https://editor.mdnice.com/?outId=988ab8d2a46346e682b2025eb54e1941#">设置</a><a id="nice-menu-help" class="ant-dropdown-trigger nice-menu-link" href="https://editor.mdnice.com/?outId=988ab8d2a46346e682b2025eb54e1941#">帮助</a><a id="nice-menu-tutorial" class="ant-dropdown-trigger nice-menu-link" href="https://editor.mdnice.com/?outId=988ab8d2a46346e682b2025eb54e1941#">教程</a></div><div class="nice-right-nav"><span class="ant-avatar ant-avatar-sm ant-avatar-circle"><span class="ant-avatar-string" style="transform: scale(1) translateX(-50%);">s</span></span><span class="ant-dropdown-trigger nice-username">smartsi</span><button type="button" class="ant-btn ant-btn-default nice-btn-article"><svg viewBox="0 0 1024 1024" class="nice-btn-article-icon" fill="rgba(0,0,0,0.65)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M242.346667 225.28h259.413333v40.96H242.346667z" p-id="4702"></path><path d="M242.346667 413.013333h433.493333v40.96H242.346667z" p-id="4703"></path><path d="M242.346667 600.746667h433.493333v40.96H242.346667z" p-id="4704"></path><path d="M836.266667 914.773333H78.506667c-44.373333 0-78.506667-34.133333-78.506667-78.506666V78.506667C0 34.133333 34.133333 0 78.506667 0h17.066666v40.96h-17.066666c-20.48 0-37.546667 17.066667-37.546667 37.546667v757.76c0 20.48 17.066667 37.546667 37.546667 37.546666h757.76c20.48 0 37.546667-17.066667 37.546666-37.546666V78.506667c0-20.48-17.066667-37.546667-37.546666-37.546667h-40.96V0h40.96c44.373333 0 78.506667 34.133333 78.506666 78.506667v757.76c0 44.373333-34.133333 78.506667-78.506666 78.506666z" p-id="4705"></path><path d="M187.733333 0h542.72v40.96H187.733333z" p-id="4706"></path><path d="M945.493333 1024H225.28v-40.96h720.213333c20.48 0 37.546667-17.066667 37.546667-37.546667v-716.8H1024v716.8c0 44.373333-37.546667 78.506667-78.506667 78.506667z" p-id="4707"></path></svg></button></div></div><div class="nice-text-container"><div id="nice-md-editor" class="nice-md-editing"><textarea style="display: none;"></textarea><div class="CodeMirror cm-s-md-mirror CodeMirror-wrap" translate="no" style="width: 100%; height: 100%;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 171.438px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; min-height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="bottom: 0px; display: block;"><div style="min-width: 1px; height: 3748px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true" style="right: 6px; left: 0px;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true" style="height: 6px; width: 6px;"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: -6px; border-right-width: 44px; min-height: 3708px; padding-right: 6px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style="visibility: hidden;"><div class="CodeMirror-cursor" style="left: 151.438px; top: 25px; height: 25px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-quote cm-quote-1">&gt; 当前版本：2.1.0</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-header cm-header-2">## 1. 简介</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">随着互联网流量爆发式增长，越来越多的公司业务需要支撑海量数据存储，对高并发、高可用、高可扩展性等特性提出了更高的要求，这促使各种类型的数据库快速发展，至今常见数据库已经达到 200 多个。与之相伴的便是，各种数据库之间的同步与转换需求激增，数据集成便成了大数据领域的一个亟需优秀解决方案的方向。当前市面上没有一个简单易用且支持每天数百亿条海量数据同步的开源软件，于是 SeaTunnel 应运而生。</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">SeaTunnel 是一个非常好用的、超高性能的、分布式数据集成平台，架构于 Apache Spark 和 Apache Flink 之上，实现海量数据的实时同步与转换。每天可以稳定高效的同步数百亿数据，目前已接近百家公司在生产上使用。</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">SeaTunnel 原名 Waterdrop，于 2017 年由乐视创建，并于同年在 GitHub 上开源，2021 年 10 月改名为 SeaTunnel。2021 年 12 月，SeaTunnel 正式通过世界顶级开源组织 Apache 软件基金会的投票决议，以全票通过的优秀表现正式成为 Apache 孵化器项目，成为 Apache 基金会中第一个诞生自中国的数据集成平台项目。</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-header cm-header-2">## 2. 目标</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">SeaTunnel 尽所能为您解决海量数据同步中可能遇到的问题：</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable-2">- 使用 Spark、Flink 作为底层数据同步引擎使其具备分布式执行能力，提高数据同步的吞吐性能;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable-2">- 集成多种能力缩减 Spark、Flink 应用到生产环境的周期与复杂度;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable-2">- 利用可插拔的插件体系支持超过 100 种数据源;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable-2">- 引入管理与调度能力做到自动化的数据同步任务管理;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable-2">- 特定场景做端到端的优化提升数据同步的数据一致性;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable-2">- 开放插件化与 API 集成能力帮助企业实现快速定制与集成;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-header cm-header-2">## 3. 使用场景</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">SeaTunnel 的使用场景广阔，包括如下场景：</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable-2">- 海量数据同步</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable-2">- 海量数据集成</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable-2">- 海量数据 ETL</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable-2">- 海量数据聚合</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable-2">- 多源数据处理</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-header cm-header-2">## 4. 特性</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">数据集成平台要围绕解决海量数据同步这一目标进行，核心理念是保持海量数据能快速同步的同时还能保持数据的一致性，具体到 Apache SeaTunnel 来说，Apache SeaTunnel 具有以下核心特性:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable-2">- 高扩展性：模块化和插件化，支持热插拔, 带来更好的扩展性;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable-2">- 插件丰富：内置丰富插件，支持各种数据产品的传输和集成;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable-2">- 成熟稳定：经历大规模生产环境使用和海量数据的检验，具有高性能、海量数据的处理能力;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable-2">- 简单易用：特有的架构设计，简单易用，灵活配置，无需开发;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable-2">- SQL支持：支持通过 SQL 进行数据处理和聚合;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable-2">- 流式支持：支持实时流式处理;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-header cm-header-2">## 5. 架构与工作流程</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Apache SeaTunnel 发展上有 2 个大版本，1.x 版本基于 Spark 构建，现在在打造的 2.x 既支持 Spark 又支持 Flink。在架构设计上，Apache SeaTunnel 参考了 Presto 的 SPI 化思想，有很好的插件化体系设计。</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">在技术选型时，Apache SeaTunnel 主要考虑技术成熟度和社区活跃性。Spark、Flink 都是非常优秀并且流行的大数据计算框架，所以 1.x 版本选了 Spark，2.x 版本将架构设计的更具扩展性，用户可以选择 Spark 或 Flink 集群来做 Apache SeaTunnel 的计算层，当然架构扩展性的考虑也是为以后支持更多引擎准备，说不定已经有某个更先进的计算引擎在路上，也说不定 Apache SeaTunnel 社区自己会实现一个为数据同步量身打造的引擎。</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">如下图是 Apache SeaTunnel 的整个工作流程，数据处理流水线由 Source、Sink 以及多个 Transform 构成，以满足多种数据处理需求:</span></pre><pre class=" CodeMirror-line " role="presentation" style="display: none;"><span role="presentation" style="padding-right: 0.1px;">SeaTunnel 是一个非常好用的、超高性能的、分布式数据集成平台，架构于 Apache Spark 和 Apache Flink 之上，实现海量数据的实时同步与转换。每天可以稳定高效的同步数百亿数据，目前已接近百家公司在生产上使用。</span></pre></div></div></div></div></div><div style="position: absolute; height: 44px; width: 1px; border-bottom: 0px solid transparent; top: 3708px;"></div><div class="CodeMirror-gutters" style="display: none; height: 3752px;"></div></div></div></div><div id="nice-rich-text" class="nice-marked-text nice-marked-text-pc"><div class="nice-sidebar"><a id="nice-sidebar-wechat" class="nice-btn-wechat"><svg viewBox="0 0 40 40" class="nice-btn-wechat-icon" fill="rgba(0,0,0,0.65)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g><g><path fill="#07C060" d="M38.7,15.3c-3.7-4.9-10.2-6.2-16.1-4.1c0.2,0.1,0.4,0.1,0.6,0.2c8.7,2.9,13.3,12.3,10.4,21 c-0.8,2.3-2,4.3-3.5,6c1.9-0.5,3.8-1.3,5.4-2.5C42.1,30.8,43.4,21.4,38.7,15.3z"></path></g><g><path fill="#07C060" d="M17,10.4L17,10.4C17,10.4,17,10.4,17,10.4c0.4-0.3,0.7-0.5,1.1-0.8c0,0,0,0,0.1,0c0.4-0.2,0.8-0.4,1.1-0.7 c0,0,0.1,0,0.1-0.1c0.8-0.4,1.6-0.7,2.4-1c0.1,0,0.1,0,0.2-0.1c0.4-0.1,0.8-0.3,1.2-0.4c0,0,0.1,0,0.1,0c0.4-0.1,0.8-0.2,1.2-0.2 c0.1,0,0.1,0,0.2,0C25.3,7,25.7,7,26.1,7c0.1,0,0.2,0,0.3,0c0.4,0,0.9-0.1,1.3-0.1c0.5,0,1,0,1.5,0.1c0.1,0,0.1,0,0.2,0 c0.5,0,0.9,0.1,1.4,0.2c0.1,0,0.2,0,0.2,0c0.5,0.1,0.9,0.2,1.3,0.3c0.1,0,0.1,0,0.2,0.1C33,7.7,33.5,7.8,33.9,8 c-0.2-0.4-0.4-0.7-0.4-0.7C30.6,2.7,25.8,0,20.6,0c-3.1,0-7.9,1.1-11.5,5.4c-2.4,2.9-3.2,6.3-2.7,9.7c0.3,2.3,1.6,5.4,3.5,7.3 C10.6,17.5,13.2,13.2,17,10.4z"></path></g><g><path fill="#07C060" d="M20.6,30.9c-1.3,0-2.6-0.2-3.8-0.4c-0.1,0-0.3,0-0.5,0c-0.4,0-0.7,0.1-1,0.3l-4,2.6 c-0.1,0.1-0.2,0.1-0.4,0.1c-0.3,0-0.6-0.3-0.7-0.6c0-0.2,0-0.3,0.1-0.5c0-0.1,0.4-2,0.7-3.2c0-0.1,0.1-0.3,0-0.4 c0-0.4-0.2-0.8-0.6-1c-4.3-2.9-7.2-7.5-7.8-12.2c-1.1,1.7-1.6,3-2.2,5c-2.1,7.3,2.5,16,9.9,18.4c8.6,2.8,16.7-0.3,19.5-7.6 c0.3-0.9,0.7-2.4,0.8-3.6C27.7,29.9,24.6,30.9,20.6,30.9z"></path></g></g></g></svg></a><a id="nice-sidebar-zhihu" class="nice-btn-zhihu"><svg viewBox="0 0 1024 1024" class="nice-btn-zhihu-icon" fill="rgba(0,0,0,0.65)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M564.7 230.1V803h60l25.2 71.4L756.3 803h131.5V230.1H564.7z m247.7 497h-59.9l-75.1 50.4-17.8-50.4h-18V308.3h170.7v418.8zM526.1 486.9H393.3c2.1-44.9 4.3-104.3 6.6-172.9h130.9l-0.1-8.1c0-0.6-0.2-14.7-2.3-29.1-2.1-15-6.6-34.9-21-34.9H287.8c4.4-20.6 15.7-69.7 29.4-93.8l6.4-11.2-12.9-0.7c-0.8 0-19.6-0.9-41.4 10.6-35.7 19-51.7 56.4-58.7 84.4-18.4 73.1-44.6 123.9-55.7 145.6-3.3 6.4-5.3 10.2-6.2 12.8-1.8 4.9-0.8 9.8 2.8 13 10.5 9.5 38.2-2.9 38.5-3 0.6-0.3 1.3-0.6 2.2-1 13.9-6.3 55.1-25 69.8-84.5h56.7c0.7 32.2 3.1 138.4 2.9 172.9h-141l-2.1 1.5c-23.1 16.9-30.5 63.2-30.8 65.2l-1.4 9.2h167c-12.3 78.3-26.5 113.4-34 127.4-3.7 7-7.3 14-10.7 20.8-21.3 42.2-43.4 85.8-126.3 153.6-3.6 2.8-7 8-4.8 13.7 2.4 6.3 9.3 9.1 24.6 9.1 5.4 0 11.8-0.3 19.4-1 49.9-4.4 100.8-18 135.1-87.6 17-35.1 31.7-71.7 43.9-108.9L497 850l5-12c0.8-1.9 19-46.3 5.1-95.9l-0.5-1.8-108.1-123-22 16.6c6.4-26.1 10.6-49.9 12.5-71.1h158.7v-8c0-40.1-18.5-63.9-19.2-64.9l-2.4-3z" fill="#1296db" p-id="8715"></path></svg></a><a id="nice-sidebar-mdnice" class="nice-btn-mdnice"><svg viewBox="0 0 300 300" class="nice-btn-mdnice-icon" fill="rgba(0,0,0,0.65)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="页面-1" stroke="none" stroke-width="1" fill="none"><g id="Logo-线框备份-5" transform="translate(-127.000000, -193.000000)"><rect id="矩形" x="0.0003" y="0" width="599.9997" height="600"></rect><g id="编组备份" transform="translate(44.000000, 44.000000)"><path d="M365.858,0 C416.675,0 435.102,5.291 453.68,15.227 C472.258,25.162 486.838,39.742 496.773,58.32 C506.708,76.897 512,95.325 512,146.142 L512,365.859 C512,416.675 506.708,435.102 496.773,453.68 C486.838,472.258 472.258,486.837 453.68,496.773 C435.102,506.708 416.675,512 365.858,512 L146.141,512 C95.325,512 76.897,506.708 58.319,496.773 C39.742,486.837 25.162,472.258 15.226,453.68 C5.291,435.102 0,416.675 0,365.859 L0,146.142 C0,95.325 5.291,76.897 15.226,58.32 C25.162,39.742 39.742,25.162 58.319,15.227 C76.897,5.291 95.325,0 146.141,0 L365.858,0 Z" id="Fill-1"></path><g id="编组-2" transform="translate(83.500000, 149.500000)"><path d="M97.0429363,33.2328226 C93.8517735,23.3994764 84.6994049,16.7418003 74.3725769,16.7418003 C64.0457489,16.7418003 54.8933804,23.3994802 51.7022175,33.2328226 L0,192.549528 L45.3407226,192.549528 L97.0429363,33.2328226 Z" id="路径" fill="#C6DAE7"></path><path d="M176.364586,137.94268 C179.555749,147.77603 188.708118,154.433703 199.034946,154.433703 C209.361774,154.433703 218.514142,147.77603 221.705305,137.94268 C215.322979,157.609357 197.018235,170.924729 176.364586,170.924729 C155.710938,170.924729 137.406197,157.609357 131.023871,137.94268 L97.0429402,33.2328226 C93.8517735,23.3994764 84.6994049,16.7418003 74.3725769,16.7418003 C64.0457489,16.7418003 54.8933804,23.3994802 51.7022175,33.2328226 C58.0845432,13.5661264 76.3892879,0.25077413 97.0429363,0.25077413 C117.696585,0.25077413 136.001326,13.5661264 142.383663,33.2328226 C159.37415,85.5877431 159.374129,85.5877498 176.364586,137.94268 Z" id="路径" fill="#62B5E5"></path><path d="M221.705305,137.94268 C218.514142,147.77603 209.361774,154.433703 199.034946,154.433703 C188.708118,154.433703 179.555749,147.77603 176.364586,137.94268 C194.763672,81.2472392 206.090655,46.3439534 210.345536,33.2328226 C216.727858,13.5661264 235.032603,0.25077413 255.686251,0.25077413 C276.3399,0.25077413 294.644641,13.5661264 301.026966,33.2328226 C297.835804,23.3994764 288.683435,16.7418003 278.356607,16.7418003 C268.029779,16.7418003 258.87741,23.3994802 255.686248,33.2328226 C238.695778,85.5877519 238.695763,85.587747 221.705305,137.94268 Z" id="路径" fill="#C6DAE7"></path><path d="M302.547756,164.291731 C299.661311,173.186075 302.823384,182.929748 310.380161,188.426766 C317.936962,193.923783 328.169617,193.923783 335.726394,188.426766 C343.283172,182.929748 346.445245,173.186075 343.5588,164.291731 L323.053291,101.105369 C311.307231,137.300047 304.472053,158.362168 302.547756,164.291731 Z" id="路径" fill="#62B5E5"></path></g></g></g></g></svg></a><a id="nice-sidebar-preview-type" class="nice-btn-previewtype"><svg viewBox="0 0 1024 1024" class="nice-btn-previewtype-icon" fill="rgba(0,0,0,0.65)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M736 0l-448 0c-52.8 0-96 43.2-96 96l0 832c0 52.8 43.2 96 96 96l448 0c52.8 0 96-43.2 96-96l0-832c0-52.8-43.2-96-96-96zM384 48l256 0 0 32-256 0 0-32zM512 960c-35.346 0-64-28.654-64-64s28.654-64 64-64 64 28.654 64 64-28.654 64-64 64zM768 768l-512 0 0-640 512 0 0 640z"></path></svg></a><a id="nice-sidebar-soogif" class="nice-btn-soogif"><svg viewBox="0 0 18 18" class="nice-btn-soogif-icon" fill="rgba(0,0,0,0.65)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><image id="image0" width="20" height="20" x="0" y="0" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAA
+CXBIWXMAABcRAAAXEQHKJvM/AAAAB3RJTUUH5QQQAgEDrFJlWwAACDRJREFUWMPtmFuIXVcZx3/f
+Wvt2LjNnzpnLmZkkk6bTNKaQok5vDy00Vmgttkhv9or4ID7UJxXUp+JLFX3wQVRQQRB8agShVFor
+tRJRm1ZbS9OLudBkJjOTuZ85931Znw9zWoZg0pl0RJEu+Fiw9177+63/Wt/a3/5EVflfbua/DfAR
+4HabiHgi4m/1ee8yneSBXwB7gQCwgN8z7wILNoSQ3nNiQI8BN23J13aDpDf7p00Y3e4NVPCjPM25
+efADbJhDMwXrYaIAt15H2w3Q7P3xqgraVaCgqu0dVVBEBHjSK5Vv23PP58kNVWBhmeXT08QDZcRl
+ZO02WasFApplxOfn0LSLJimu1kCSLqpdgBHgzE4v8eO5cv7rH/vCo1RHRwktrIQWb3I/CyemKQwW
+0UaT5moN5+dw7Qa22I9rrpO2W7hSi2RmFtptAbd/RwFF5HBhqPC9+779RQaSPvaO9yEpzIyVON/p
+QG6cUZMys+ZxtNEkCUNEHVGaYQeHaNbW0HYLugnxdB20+3Hg9zsCKCJ32GLw24nHrpH5eJqovo9X
+Bl+j3B6kWhhksq/A8nqNVmAZNymH9w0ilRJzZxepxS1mMQTFElmUJ1tfIz5nIWP3VnxvDTC035r4
+0ifElSyNgRongn9gzsPK+BnOhSV2n7iS3WOjVIfLuIkK48st0jRlIl/lZCsm6BvgnXOLiO8jYYQt
+VchWOtUdARQRa/uDKc9AXMuY/2dK6AVEZaW47uh4KzR2rXBeq/hLHrl8hWqrQi6zDI4P83q7w1hx
+nTNL09SWF0kX5jVbPZeBju2UguNDI0F+qOjopkIjTkiNw3U8FmKDpyklJ7RLs/h5oRDXmUlOY05G
+ZC/F+sJTz7k0iVvAdM+eBX6ivVDeCcBrr7vSyO17OqwmcHQlxLOOQa/D22sWVWgBa8frLL0yhzin
+nYVuGq/Hy8CPgBeBdeCUqja3ArVdwAdGKsLBqMVKBleUY4qhcrrhURkKOP5GnRd+fsr1lJkHngee
+Ut10On+IdklAETHAzaWioTKUoiIEQcbZOUO2HDM1GrOwtA7QAe7eKajtKJgDwmqfoV7LiDyoNw05
+L2OoX9BOzEAhBUg2w/UmproDyeYHZTNlILe/z6d/PQUHA7mMUs7RFziu3qOgDmDpgnF/BjIRaYjI
+URH5rojcJSKjIlIQkVBE7E4oOB4G0lf1HdOzDt/PCIcsCw1hT8lgapYwFYA/bh6096rok1feuVtW
+nFfwVrKbJ73GzccW8/jDhrQWs3a2pel6FzFSQzmgqguXC7h3zPO93NsltBAzONakPpNScvDWrOHa
+UUvQFQX+sGl5H3ronqL3jfscz52ynGsG3LvX8Whs+PV8H2+0cowWjLgG/O3JY2G61q0CFwX8oCXe
+N1yIpL0SUqgF+CfLFGeLdBPDvrzjpTNt6hvb7OimMQ8/+Lk+6Y+U+w+2uNbVKRcd44WUR3bVmCp1
+SBa6NNdjbDHwgYkPs8S33l0YwS72M1dLKIuSK3QZToVSJaVY6fCXV7uqqmd66uWBsckJn3fnlfE+
+5fCUggjNtuGKquPx8ip/Hwx5eSEkuSpn35mpXx6giBiBT02FFWzX4/rYR1FcI6JYj9BSl8qeOula
+021WHDiUrmaszToOHhC6HVCUuJtD6FIMlVt2tZmqtJn8tMfXXrx00nApBXcHSGAa80ReSGwDEmMQ
+7WLiPKFGtJdynD+7tBnwLeCRG+8/9/Bdh/N3L18f2ltuiAgCwwB1/LqALxAJBQM3XG3EWiYvF3B/
+KIjGbcQY0iwGFIxHJ64Ra44wFzDbTpyIREBXVR1wBDgiIlcceb71p+EBM/7TL/fLgQMhXd9iFx1a
+tmAFTxyFnBy6XMBb+40hEKGVxgiORATrUlKUYD3GekVaLgmBY8DrIjILvAY8o6rvisiBxTV34v7v
+r40989UBJs57OAPpUoaXF0pAPpCrRCS8WPJwKcBTdef0eLcjk75PokrVD8jU4Ysg4miu1Hl6pCot
+Gx16M+4e+k2rwem4QzdL06IxSz3Y0Zt2+UxGPvVVKKQQ5pTMV1xLGfLEn9+I5BP/NhYu9jUSEQ/4
+1TXGPPDZICASYSTw6RPDmO9R8jy6TskbwRMhNT65sESSNFmNG6xmGbMS6lvSkhuqcFM1pLFgkETx
+jMOEQAu+MrPGi/X4M6r67LYUVNVURJ5407k7hpKkf5+1LMdQtYYUhwKeCC1nMChrcZNS3CYwECKM
+iLDPy2SKkPy6kjQVYocRyJzQyEN/E4YzC3AjG9nQtpYYVX1bRH7wcpY9kQGDzmGcJc4cs3FKzhoK
+xvBKEHKg08WixKoYIPQsB02IL4JpKzlrUXWoGERAW6DAkDXvAW47SN5r32nDnW9m7vo9xrDoMkaM
+w0cxIuRECJOUFdWNaHdKxzkCp+CUvb5Hkjd4ecHWhRXAOsUXoZ453k1SgLKIBKoab3kPXrAf7wGO
+DGKkLLJxDYiBskAEXOdZImM4mSRkwAqwx/c4ZAyRMRSNoeBZ5pOUCMhZyw8bTX0tTdvAbar6120F
+yQWAPvBLDx4s97Ik7UEGPSuwcQY7wNuYA6EYIlV2GWHebRxTu41h2Fp+lyQcT9MZ4F5VPXZR31vN
+KUUkAE6EMGExGAR57977+0UpAAWBRIS2bqg8DHTZgE9UmcPhNv5V7lLVxiUdq+qWDXgMeJWNnyDX
+MwVUemZBPdAQNAINQCNE84jmEO2J/DOgshWf265ubVK0HxgCKmwUgsaAcWAUGAD6gGKv7wdKvf7H
+wDdVNd2Sn/9EjbpXBTMXmO31jd43e2vv+qiI/v8O+C8fEuMNmYy6rwAAACV0RVh0ZGF0ZTpjcmVh
+dGUAMjAyMS0wNC0xNVQxODowMTowMyswODowMNOxctIAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjEt
+MDQtMTVUMTg6MDE6MDMrMDg6MDCi7MpuAAAAIHRFWHRzb2Z0d2FyZQBodHRwczovL2ltYWdlbWFn
+aWNrLm9yZ7zPHZ0AAAAYdEVYdFRodW1iOjpEb2N1bWVudDo6UGFnZXMAMaf/uy8AAAAXdEVYdFRo
+dW1iOjpJbWFnZTo6SGVpZ2h0ADQwibsPHwAAABZ0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAA0MHEU
+z5IAAAAZdEVYdFRodW1iOjpNaW1ldHlwZQBpbWFnZS9wbmc/slZOAAAAF3RFWHRUaHVtYjo6TVRp
+bWUAMTYxODQ4MDg2M5frn8kAAAASdEVYdFRodW1iOjpTaXplADIyOTlCQl+nnIYAAABGdEVYdFRo
+dW1iOjpVUkkAZmlsZTovLy9hcHAvdG1wL2ltYWdlbGMvaW1ndmlldzJfOV8xNjA5OTAzNTkyOTAx
+ODkyN18yNV9bMF3UnUtKAAAAAElFTkSuQmCC"></image></svg></a></div><div id="nice-rich-text-box" class="nice-wx-box nice-wx-box-pc"><section id="nice" data-tool="mdnice编辑器" data-website="https://www.mdnice.com"><blockquote class="multiquote-1">
+<p>当前版本：2.1.0</p>
+</blockquote>
+<h2><span class="prefix"></span><span class="content">1. 简介</span><span class="suffix"></span></h2>
+<p>随着互联网流量爆发式增长，越来越多的公司业务需要支撑海量数据存储，对高并发、高可用、高可扩展性等特性提出了更高的要求，这促使各种类型的数据库快速发展，至今常见数据库已经达到 200 多个。与之相伴的便是，各种数据库之间的同步与转换需求激增，数据集成便成了大数据领域的一个亟需优秀解决方案的方向。当前市面上没有一个简单易用且支持每天数百亿条海量数据同步的开源软件，于是 SeaTunnel 应运而生。</p>
+<p>SeaTunnel 是一个非常好用的、超高性能的、分布式数据集成平台，架构于 Apache Spark 和 Apache Flink 之上，实现海量数据的实时同步与转换。每天可以稳定高效的同步数百亿数据，目前已接近百家公司在生产上使用。</p>
+<p>SeaTunnel 原名 Waterdrop，于 2017 年由乐视创建，并于同年在 GitHub 上开源，2021 年 10 月改名为 SeaTunnel。2021 年 12 月，SeaTunnel 正式通过世界顶级开源组织 Apache 软件基金会的投票决议，以全票通过的优秀表现正式成为 Apache 孵化器项目，成为 Apache 基金会中第一个诞生自中国的数据集成平台项目。</p>
+<h2><span class="prefix"></span><span class="content">2. 目标</span><span class="suffix"></span></h2>
+<p>SeaTunnel 尽所能为您解决海量数据同步中可能遇到的问题：</p>
+<ul>
+<li><section>使用 Spark、Flink 作为底层数据同步引擎使其具备分布式执行能力，提高数据同步的吞吐性能;</section></li><li><section>集成多种能力缩减 Spark、Flink 应用到生产环境的周期与复杂度;</section></li><li><section>利用可插拔的插件体系支持超过 100 种数据源;</section></li><li><section>引入管理与调度能力做到自动化的数据同步任务管理;</section></li><li><section>特定场景做端到端的优化提升数据同步的数据一致性;</section></li><li><section>开放插件化与 API 集成能力帮助企业实现快速定制与集成;</section></li></ul>
+<h2><span class="prefix"></span><span class="content">3. 使用场景</span><span class="suffix"></span></h2>
+<p>SeaTunnel 的使用场景广阔，包括如下场景：</p>
+<ul>
+<li><section>海量数据同步</section></li><li><section>海量数据集成</section></li><li><section>海量数据 ETL</section></li><li><section>海量数据聚合</section></li><li><section>多源数据处理</section></li></ul>
+<h2><span class="prefix"></span><span class="content">4. 特性</span><span class="suffix"></span></h2>
+<p>数据集成平台要围绕解决海量数据同步这一目标进行，核心理念是保持海量数据能快速同步的同时还能保持数据的一致性，具体到 Apache SeaTunnel 来说，Apache SeaTunnel 具有以下核心特性:</p>
+<ul>
+<li><section>高扩展性：模块化和插件化，支持热插拔, 带来更好的扩展性;</section></li><li><section>插件丰富：内置丰富插件，支持各种数据产品的传输和集成;</section></li><li><section>成熟稳定：经历大规模生产环境使用和海量数据的检验，具有高性能、海量数据的处理能力;</section></li><li><section>简单易用：特有的架构设计，简单易用，灵活配置，无需开发;</section></li><li><section>SQL支持：支持通过 SQL 进行数据处理和聚合;</section></li><li><section>流式支持：支持实时流式处理;</section></li></ul>
+<h2><span class="prefix"></span><span class="content">5. 架构与工作流程</span><span class="suffix"></span></h2>
+<p>Apache SeaTunnel 发展上有 2 个大版本，1.x 版本基于 Spark 构建，现在在打造的 2.x 既支持 Spark 又支持 Flink。在架构设计上，Apache SeaTunnel 参考了 Presto 的 SPI 化思想，有很好的插件化体系设计。</p>
+<p>在技术选型时，Apache SeaTunnel 主要考虑技术成熟度和社区活跃性。Spark、Flink 都是非常优秀并且流行的大数据计算框架，所以 1.x 版本选了 Spark，2.x 版本将架构设计的更具扩展性，用户可以选择 Spark 或 Flink 集群来做 Apache SeaTunnel 的计算层，当然架构扩展性的考虑也是为以后支持更多引擎准备，说不定已经有某个更先进的计算引擎在路上，也说不定 Apache SeaTunnel 社区自己会实现一个为数据同步量身打造的引擎。</p>
+<p>如下图是 Apache SeaTunnel 的整个工作流程，数据处理流水线由 Source、Sink 以及多个 Transform 构成，以满足多种数据处理需求:</p>
+<pre class="custom"><code class="hljs">Source[Data&nbsp;Source&nbsp;Input]&nbsp;-&gt;&nbsp;Transform[Data&nbsp;Processing]&nbsp;-&gt;&nbsp;Sink[Result&nbsp;Output]<br></code></pre>
+<figure><img src="https://github.com/sjf0115/ImageBucket/blob/main/SeaTunnel/apache-seatunnel-introduction-1.png?raw=true" alt=""></figure>
+<p>如果用户习惯了 SQL，也可以直接使用 SQL 构建数据处理管道，更加简单高效。目前，SeaTunnel 支持的 Transform 列表也在扩展中。你也可以开发自己的数据处理插件。</p>
+<h2><span class="prefix"></span><span class="content">6. SeaTunnel 支持的插件</span><span class="suffix"></span></h2>
+<p>Source 插件：</p>
+<ul>
+<li><section>File</section></li><li><section>Hdfs</section></li><li><section>Kafka</section></li><li><section>Druid</section></li><li><section>InfluxDB</section></li><li><section>S3</section></li><li><section>Socket</section></li><li><section>自研输入插件</section></li></ul>
+<p>Transform 插件：</p>
+<ul>
+<li><section>Add</section></li><li><section>Checksum</section></li><li><section>Convert</section></li><li><section>Date</section></li><li><section>Drop</section></li><li><section>Grok</section></li><li><section>Json</section></li><li><section>Kv</section></li><li><section>Lowercase</section></li><li><section>Remove</section></li><li><section>Rename</section></li><li><section>Repartition</section></li><li><section>Replace</section></li><li><section>Sample</section></li><li><section>Split</section></li><li><section>Sql</section></li><li><section>Table</section></li><li><section>Truncate</section></li><li><section>Uppercase</section></li><li><section>Uuid</section></li><li><section>自研过滤器插件</section></li></ul>
+<p>Sink 插件:</p>
+<ul>
+<li><section>Elasticsearch</section></li><li><section>File</section></li><li><section>Hdfs</section></li><li><section>Jdbc</section></li><li><section>Kafka</section></li><li><section>Druid</section></li><li><section>InfluxDB</section></li><li><section>Mysql</section></li><li><section>S3</section></li><li><section>Stdout</section></li><li><section>自研输出插件</section></li></ul>
+<h2><span class="prefix"></span><span class="content">7. 生产应用案例</span><span class="suffix"></span></h2>
+<ul>
+<li><section><a href="https://mp.weixin.qq.com/s/LVC0UZau24IwOuWN2wLt3w">唯品会</a>：唯品会早在 1.0 版本时就引用了 SeaTunnel，使用 SeaTunnel 进行一些 Hive 到 ClickHouse 之间数据交互的工作。</section></li><li><section><a href="https://mp.weixin.qq.com/s/2m2fu0lO8BH74UiBHePVbg">Oppo</a>：基于 SeaTunnel 进行的二次开发搭建 ETL 特征生产处理平台。</section></li><li><section><a href="https://mp.weixin.qq.com/s/Jexke3ZZAVRiMebwDsRiQg">Bilibili</a>：基于 SeaTunnel 二次开发实现 AlterEgo 项目。SeaTunnel 在 B 站每天完成千亿级记录、百T级数据的出入仓，解决了电商、直播、创作中心等场景核心任务出入仓难题。</section></li><li><section>微博：微博某业务有数百个实时流式计算任务使用内部定制版 SeaTunnel，以及其子项目 Guardian 做 Seatunnel On Yarn 的任务监控。</section></li><li><section>新浪大数据运维分析平台：新浪运维数据分析平台使用 SeaTunnel 为新浪新闻，CDN 等服务做运维大数据的实时和离线分析，并写入 Clickhouse。</section></li><li><section>搜狗奇点系统：搜狗奇点系统使用 SeaTunnel 作为 ETL 工具, 帮助建立实时数仓体系。</section></li><li><section>趣头条数据中心：使用 SeaTunnel 支撑 MySQL To Hive 的离线 ETL 任务、实时 Hive To Clickhouse 的 backfill 技术支撑，很好的 cover 离线、实时大部分任务场景。</section></li><li><section>永辉超市子公司-永辉云创会员电商数据分析平台：SeaTunnel 为永辉云创旗下新零售品牌永辉生活提供电商用户行为数据实时流式与离线 SQL 计算。</section></li><li><section>水滴筹：水滴筹在 Yarn 上使用 SeaTunnel 做实时流式以及定时的离线批处理，每天处理 3～4T 的数据量，最终将数据写入 Clickhouse。</section></li><li><section>腾讯云：将业务服务的各种日志收集到 Apache Kafka 中，通过 Seatunnel 消费和提取 Apache Kafka 中的部分数据，然后存储到 Clickhouse 中。</section></li></ul>
+<p>参考：</p>
+<ul>
+<li><section><a href="https://seatunnel.apache.org/zh-CN/docs/2.1.0/introduction">Introduction</a></section></li></ul>
+</section></div></div><div></div><ul class="ant-menu ant-menu-root ant-menu-vertical ant-menu-light nice-editor-menu" id="nice-editor-menu" role="menu" tabindex="0" data-menu-list="true"><li class="ant-menu-item ant-menu-item-only-child ant-dropdown-menu-item" role="menuitem" tabindex="-1" data-menu-id="nice-editor-menu-tmp_key-0"><span class="ant-menu-title-content"><div id="nice-menu-link-to-foot" class="nice-menu-item"><span><span class="nice-menu-flag"></span><span class="nice-menu-name">微信外链转脚注</span></span><span class="nice-menu-shortcut">⌥⌘L</span></div></span></li><li class="ant-menu-item ant-menu-item-only-child ant-dropdown-menu-item" role="menuitem" tabindex="-1" data-menu-id="nice-editor-menu-tmp_key-1"><span class="ant-menu-title-content"><div id="nice-menu-format" class="nice-menu-item"><span><span class="nice-menu-flag"></span><span class="nice-menu-name">格式化文档</span></span><span class="nice-menu-shortcut">⌥⌘F</span></div></span></li><li class="ant-menu-item ant-menu-item-only-child ant-dropdown-menu-item" role="menuitem" tabindex="-1" data-menu-id="nice-editor-menu-tmp_key-2"><span class="ant-menu-title-content"><div id="nice-menu-image" class="nice-menu-item"><span><span class="nice-menu-flag"></span><span class="nice-menu-name">图片</span></span><span class="nice-menu-shortcut">⌥⌘I</span></div></span></li></ul><div aria-hidden="true" style="display: none;"></div></div><div class=""><div class="nice-footer-container"><div class="nice-footer-left-container"><p>行数：119</p><p>字数：1692</p><p>主题：默认主题</p></div><div class="nice-footer-right-container"></div></div></div></div></div></div><script>!function(o){function e(e){for(var f,c,d=e[0],r=e[1],t=e[2],n=0,a=[];n<d.length;n++)c=d[n],u[c]&&a.push(u[c][0]),u[c]=0;for(f in r)Object.prototype.hasOwnProperty.call(r,f)&&(o[f]=r[f]);for(p&&p(e);a.length;)a.shift()();return i.push.apply(i,t||[]),b()}function b(){for(var e,f=0;f<i.length;f++){for(var c=i[f],d=!0,r=1;r<c.length;r++){var t=c[r];0!==u[t]&&(d=!1)}d&&(i.splice(f--,1),e=l(l.s=c[0]))}return e}var c={},u={6:0},i=[];function l(e){if(c[e])return c[e].exports;var f=c[e]={i:e,l:!1,exports:{}};return o[e].call(f.exports,f,f.exports,l),f.l=!0,f.exports}l.e=function(t){var e=[],c=u[t];if(0!==c)if(c)e.push(c[2]);else{var f=new Promise(function(e,f){c=u[t]=[e,f]});e.push(c[2]=f);var d,n=document.createElement("script");n.charset="utf-8",n.timeout=120,l.nc&&n.setAttribute("nonce",l.nc),n.src=l.p+"static/js/"+({}[t]||t)+"."+{0:"5ca564bf",1:"fc577f57",2:"0dafcbe3",3:"28bc0851",4:"9194b81d",8:"2bdf355b",9:"35ef68de",10:"79468499",11:"487381ea",12:"fc3bcc52",13:"5d4faf78",14:"c55960cf",15:"f864b75b",16:"85171e1d",17:"6b66d481",18:"3e904e98",19:"5ac492d6",20:"e0b7f006",21:"8f90a233",22:"cd25f39b",23:"6059b335",24:"cc62ef23",25:"1e15b70a",26:"ac1b3487",27:"9c87b29d",28:"396c5d58",29:"752e7179",30:"68f0fc4b",31:"47e04250",32:"02837a72",33:"0c1a80da",34:"0bd3a934",35:"b314c9ad",36:"1ddf1d58",37:"d8b331f5",38:"40b8db8d",39:"ef977509",40:"959482b6",41:"fd3bc4f1",42:"d4d6b6a3",43:"98afdd68",44:"c6e65eae",45:"dd7c3730",46:"f14272f3",47:"a0cfd494",48:"3d1e0a66",49:"b088def2",50:"89ebc8b1",51:"71a21c74",52:"820f32b6",53:"52a07583",54:"138e8bbe",55:"2bc58c10",56:"189f2cb6",57:"f31710a6",58:"47e8e412",59:"323f04b0",60:"0065b75b",61:"52f5c0fa",62:"b5d4f361",63:"1fc61e37",64:"50e0c67c",65:"c70f7e06",66:"2b95ead8",67:"6b927b9f",68:"1106c35b",69:"d6406d4f",70:"e994e110",71:"175a79f2",72:"e01fda76",73:"d34ec1b1",74:"c16d5f3f",75:"d1ee9dab",76:"db886db4",77:"7432699e",78:"5317da65",79:"95a362a5",80:"70915db6",81:"136617bd",82:"c96c5576",83:"73edff5f",84:"e22fc924",85:"3b7da93e",86:"553fb1de",87:"c30c52be",88:"bd08ceaa",89:"6d8dd9f0",90:"bed06b8d",91:"92879293",92:"17c400ad",93:"4d63b515",94:"4a7b5ab1",95:"28ad668f",96:"c736afcb",97:"59d20977",98:"d4c59efc",99:"2f0c590c",100:"10773bed",101:"549cc4cf",102:"7b3d81e9",103:"cf84313b",104:"df5ebeee",105:"7074bf30",106:"ded593d7",107:"d105afd0",108:"e1a843f6",109:"41f41017",110:"24d54ee3",111:"d2a0de43",112:"598f359e",113:"537dfa38",114:"93529270",115:"c94328cc",116:"81c53f2c",117:"67cb5304",118:"568d26f6",119:"8f6716e7",120:"47234d35",121:"831db0dd",122:"81d3134a"}[t]+".chunk.js",d=function(e){n.onerror=n.onload=null,clearTimeout(a);var f=u[t];if(0!==f){if(f){var c=e&&("load"===e.type?"missing":e.type),d=e&&e.target&&e.target.src,r=new Error("Loading chunk "+t+" failed.\n("+c+": "+d+")");r.type=c,r.request=d,f[1](r)}u[t]=void 0}};var a=setTimeout(function(){d({type:"timeout",target:n})},12e4);n.onerror=n.onload=d,document.head.appendChild(n)}return Promise.all(e)},l.m=o,l.c=c,l.d=function(e,f,c){l.o(e,f)||Object.defineProperty(e,f,{enumerable:!0,get:c})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(f,e){if(1&e&&(f=l(f)),8&e)return f;if(4&e&&"object"==typeof f&&f&&f.__esModule)return f;var c=Object.create(null);if(l.r(c),Object.defineProperty(c,"default",{enumerable:!0,value:f}),2&e&&"string"!=typeof f)for(var d in f)l.d(c,d,function(e){return f[e]}.bind(null,d));return c},l.n=function(e){var f=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(f,"a",f),f},l.o=function(e,f){return Object.prototype.hasOwnProperty.call(e,f)},l.p="/",l.oe=function(e){throw console.error(e),e};var f=window.webpackJsonp=window.webpackJsonp||[],d=f.push.bind(f);f.push=e,f=f.slice();for(var r=0;r<f.length;r++)e(f[r]);var p=d;b()}([])</script><script src="./Markdown _ 让排版变 Nice_files/7.52a8fed7.chunk.js"></script><script src="./Markdown _ 让排版变 Nice_files/main.0a6c1801.chunk.js"></script><div><div class="ant-message"><div></div></div></div><input id="copy-input" style="position: absolute; left: -1000px; z-index: -1000;"><div style="position: absolute; top: 0px; left: 0px; width: 100%;"><div><div class="ant-tooltip ant-tooltip-placement-left  ant-tooltip-hidden" style="left: 755px; top: -950px; transform-origin: 118.312px 50%; pointer-events: none;"><div class="ant-tooltip-content"><div class="ant-tooltip-arrow"><span class="ant-tooltip-arrow-content"></span></div><div class="ant-tooltip-inner" role="tooltip">复制到公众号</div></div></div></div></div><div style="position: absolute; top: 0px; left: 0px; width: 100%;"><div><div class="ant-dropdown nice-overlay ant-dropdown-placement-bottomLeft  ant-dropdown-hidden" style="min-width: 76px; left: -238px; top: -965px;"><ul class="ant-dropdown-menu ant-dropdown-menu-root ant-dropdown-menu-vertical ant-dropdown-menu-light" role="menu" tabindex="0" data-menu-list="true"><li class="ant-dropdown-menu-item ant-dropdown-menu-item-only-child" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-42475-2-0"><span class="ant-dropdown-menu-title-content"><div id="nice-menu-codetheme-atomOneDark" class="nice-codetheme-item"><span><span class="nice-codetheme-item-flag"><span>✔️</span></span><span class="nice-codetheme-item-name">atom-one-dark</span></span></div></span></li><li class="ant-dropdown-menu-item ant-dropdown-menu-item-only-child" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-42475-2-1"><span class="ant-dropdown-menu-title-content"><div id="nice-menu-codetheme-atomOneLight" class="nice-codetheme-item"><span><span class="nice-codetheme-item-flag"></span><span class="nice-codetheme-item-name">atom-one-light</span></span></div></span></li><li class="ant-dropdown-menu-item ant-dropdown-menu-item-only-child" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-42475-2-2"><span class="ant-dropdown-menu-title-content"><div id="nice-menu-codetheme-monokai" class="nice-codetheme-item"><span><span class="nice-codetheme-item-flag"></span><span class="nice-codetheme-item-name">monokai</span></span></div></span></li><li class="ant-dropdown-menu-item ant-dropdown-menu-item-only-child" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-42475-2-3"><span class="ant-dropdown-menu-title-content"><div id="nice-menu-codetheme-github" class="nice-codetheme-item"><span><span class="nice-codetheme-item-flag"></span><span class="nice-codetheme-item-name">github</span></span></div></span></li><li class="ant-dropdown-menu-item ant-dropdown-menu-item-only-child" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-42475-2-4"><span class="ant-dropdown-menu-title-content"><div id="nice-menu-codetheme-vs2015" class="nice-codetheme-item"><span><span class="nice-codetheme-item-flag"></span><span class="nice-codetheme-item-name">vs2015</span></span></div></span></li><li class="ant-dropdown-menu-item ant-dropdown-menu-item-only-child" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-42475-2-5"><span class="ant-dropdown-menu-title-content"><div id="nice-menu-codetheme-xcode" class="nice-codetheme-item"><span><span class="nice-codetheme-item-flag"></span><span class="nice-codetheme-item-name">xcode</span></span></div></span></li><li class="ant-dropdown-menu-item-divider"></li><li class="ant-dropdown-menu-item ant-dropdown-menu-item-only-child" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-42475-2-is_mac_code"><span class="ant-dropdown-menu-title-content"><div id="nice-menu-codetheme-apple" class="nice-codetheme-item"><span><span class="nice-codetheme-item-flag"></span><span class="nice-codetheme-item-name">Mac 风格</span></span></div></span></li></ul><div aria-hidden="true" style="display: none;"></div></div></div></div><div style="position: absolute; top: 0px; left: 0px; width: 100%;"><div><div class="ant-dropdown nice-theme-overlay ant-dropdown-placement-bottomLeft  ant-dropdown-hidden" style="min-width: 48px; left: -286px; top: -965px;"><ul class="ant-dropdown-menu ant-dropdown-menu-root ant-dropdown-menu-vertical ant-dropdown-menu-light" role="menu" tabindex="0" data-menu-list="true"><li class="ant-dropdown-menu-item-group"><div class="ant-dropdown-menu-item-group-title" title="已订阅主题">已订阅主题</div><ul class="ant-dropdown-menu-item-group-list"><li class="ant-dropdown-menu-item ant-dropdown-menu-item-only-child" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-42475-3-normal"><span class="ant-dropdown-menu-title-content"><div id="nice-menu-theme-normal" class="nice-themeselect-theme-item"><span><span class="nice-themeselect-theme-item-flag"><span>✔️</span></span><span class="nice-themeselect-theme-item-name">默认主题</span></span><span class="nice-themeselect-theme-item-author"></span></div></span></li></ul></li><li class="ant-dropdown-menu-item-divider"></li><li class="ant-dropdown-menu-item-group"><div class="ant-dropdown-menu-item-group-title" title="我设计的主题">我设计的主题</div><ul class="ant-dropdown-menu-item-group-list"><li class="ant-dropdown-menu-item ant-dropdown-menu-item-only-child" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-42475-3-custom1"><span class="ant-dropdown-menu-title-content"><div id="nice-menu-theme-custom1" class="nice-themeselect-theme-item"><span><span class="nice-themeselect-theme-item-flag"></span><span class="nice-themeselect-theme-item-name">自定义主题1</span></span><span class="nice-themeselect-theme-item-author">私有</span></div></span></li></ul></li><li class="ant-dropdown-menu-item-divider"></li><li class="ant-dropdown-menu-item-group"><div class="ant-dropdown-menu-item-group-title" title="已购买的主题">已购买的主题</div><ul class="ant-dropdown-menu-item-group-list"></ul></li><li class="ant-dropdown-menu-item-divider"></li><li class="nice-themeselect-menu-item" eventkey="tmp_key-6"><div id="nice-menu-subscribe-more" class="nice-themeselect-theme-item"><span><span class="nice-themeselect-theme-item-flag"></span><span class="nice-themeselect-theme-item-name nice-menu-subscribe-more">订阅更多主题</span></span></div><div id="nice-menu-subscribe-more" class="nice-themeselect-theme-item"><span><span class="nice-themeselect-theme-item-flag"></span><span class="nice-themeselect-theme-item-name nice-menu-subscribe-more">管理我的主题</span></span></div></li><li class="ant-dropdown-menu-item-divider"></li><li class="nice-themeselect-menu-item" eventkey="tmp_key-8"><div id="nice-menu-view-css" class="nice-themeselect-theme-item"><span><span class="nice-themeselect-theme-item-flag"></span><span class="nice-themeselect-theme-item-name">查看主题 CSS</span></span></div></li></ul><div aria-hidden="true" style="display: none;"><li class="nice-themeselect-menu-item" eventkey="tmp_key-6"><div id="nice-menu-subscribe-more" class="nice-themeselect-theme-item"><span><span class="nice-themeselect-theme-item-flag"></span><span class="nice-themeselect-theme-item-name nice-menu-subscribe-more">订阅更多主题</span></span></div><div id="nice-menu-subscribe-more" class="nice-themeselect-theme-item"><span><span class="nice-themeselect-theme-item-flag"></span><span class="nice-themeselect-theme-item-name nice-menu-subscribe-more">管理我的主题</span></span></div></li><li class="nice-themeselect-menu-item" eventkey="tmp_key-8"><div id="nice-menu-view-css" class="nice-themeselect-theme-item"><span><span class="nice-themeselect-theme-item-flag"></span><span class="nice-themeselect-theme-item-name">查看主题 CSS</span></span></div></li></div></div></div></div><div style="position: absolute; top: 0px; left: 0px; width: 100%;"><div><div class="ant-dropdown nice-overlay ant-dropdown-placement-bottomLeft  ant-dropdown-hidden" style="min-width: 48px; left: -334px; top: -965px;"><ul class="ant-dropdown-menu ant-dropdown-menu-root ant-dropdown-menu-vertical ant-dropdown-menu-light" role="menu" tabindex="0" data-menu-list="true"><li class="ant-dropdown-menu-item ant-dropdown-menu-item-only-child" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-42475-4-tmp_key-0"><span class="ant-dropdown-menu-title-content"><div id="nice-menu-full-screen" class="nice-menu-item"><span><span class="nice-menu-flag"></span><span class="nice-menu-name">全屏</span></span></div></span></li><li class="ant-dropdown-menu-item-divider"></li><li class="ant-dropdown-menu-item ant-dropdown-menu-item-only-child" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-42475-4-tmp_key-2"><span class="ant-dropdown-menu-title-content"><div id="nice-menu-edit-area" class="nice-menu-item"><span><span class="nice-menu-flag"><span>✔️</span></span><span class="nice-menu-name">编辑区域</span></span></div></span></li><li class="ant-dropdown-menu-item ant-dropdown-menu-item-only-child" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-42475-4-tmp_key-3"><span class="ant-dropdown-menu-title-content"><div id="nice-menu-preview-area" class="nice-menu-item"><span><span class="nice-menu-flag"><span>✔️</span></span><span class="nice-menu-name">预览区域</span></span></div></span></li><li class="ant-dropdown-menu-item ant-dropdown-menu-item-only-child" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-42475-4-tmp_key-4"><span class="ant-dropdown-menu-title-content"><div id="nice-menu-theme-area" class="nice-menu-item"><span><span class="nice-menu-flag"></span><span class="nice-menu-name">主题CSS区域</span></span></div></span></li></ul><div aria-hidden="true" style="display: none;"></div></div></div></div><div style="position: absolute; top: 0px; left: 0px; width: 100%;"><div><div class="ant-dropdown nice-overlay ant-dropdown-placement-bottomLeft  ant-slide-up-leave ant-slide-up-leave-start ant-slide-up" style="min-width: 48px; left: 617px; top: -995px; pointer-events: none;"><ul class="ant-dropdown-menu ant-dropdown-menu-root ant-dropdown-menu-vertical ant-dropdown-menu-light" role="menu" tabindex="0" data-menu-list="true"><li class="ant-dropdown-menu-item ant-dropdown-menu-item-only-child" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-42475-5-tmp_key-0"><span class="ant-dropdown-menu-title-content"><div id="nice-menu-reset" class="nice-menu-item"><span><span class="nice-menu-flag"></span><span class="nice-menu-name">重置</span></span></div></span></li><li class="ant-dropdown-menu-item ant-dropdown-menu-item-only-child" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-42475-5-tmp_key-1"><span class="ant-dropdown-menu-title-content"><div id="nice-menu-search" class="nice-menu-item"><span><span class="nice-menu-flag"></span><span class="nice-menu-name">查找</span></span><span class="nice-menu-shortcut">⌘F</span></div></span></li><li class="ant-dropdown-menu-item-divider"></li><li class="ant-dropdown-menu-item ant-dropdown-menu-item-only-child" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-42475-5-tmp_key-3"><span class="ant-dropdown-menu-title-content"><div id="nice-menu-history" class="nice-menu-item"><span><span class="nice-menu-flag"></span><span class="nice-menu-name">本地历史</span></span></div></span></li><li class="ant-dropdown-menu-item ant-dropdown-menu-item-only-child" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-42475-5-tmp_key-4"><span class="ant-dropdown-menu-title-content"><div id="nice-menu-sitdown" class="nice-menu-item"><span><span class="nice-menu-flag"></span><span class="nice-menu-name">SitDown</span></span></div></span></li><li class="ant-dropdown-menu-item ant-dropdown-menu-item-only-child" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-42475-5-tmp_key-5"><span class="ant-dropdown-menu-title-content"><div id="nice-menu-compress-picture" class="nice-menu-item"><span><span class="nice-menu-flag"></span><span class="nice-menu-name">图片压缩</span></span></div></span></li><li class="ant-dropdown-menu-item ant-dropdown-menu-item-active ant-dropdown-menu-item-only-child" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-42475-5-tmp_key-6"><span class="ant-dropdown-menu-title-content"><div id="nice-menu-github-report" class="nice-menu-item"><span><span class="nice-menu-flag"></span><span class="nice-menu-name">GitHub 报告</span></span></div></span></li><li class="ant-dropdown-menu-item ant-dropdown-menu-item-only-child" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-42475-5-tmp_key-7"><span class="ant-dropdown-menu-title-content"><div id="nice-menu-soogif" class="nice-menu-item"><span><span class="nice-menu-flag"></span><span class="nice-menu-name">视频转 GIF</span></span></div></span></li></ul><div aria-hidden="true" style="display: none;"></div></div></div></div></body></html>
